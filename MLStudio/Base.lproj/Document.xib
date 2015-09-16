@@ -52,6 +52,28 @@
                     </scrollView>
                 </subviews>
             </view>
+            <toolbar key="toolbar" implicitIdentifier="07DA6C2F-4441-4442-A441-50D6909288B3" autosavesConfiguration="NO" displayMode="iconAndLabel" sizeMode="regular" id="5c4-ba-BXC">
+                <allowedToolbarItems>
+                    <toolbarItem implicitItemIdentifier="NSToolbarShowFontsItem" id="Whk-gM-PkS"/>
+                    <toolbarItem implicitItemIdentifier="NSToolbarPrintItem" id="msa-9O-HWr"/>
+                    <toolbarItem implicitItemIdentifier="AC573B2F-8014-40BD-BED2-CC8B5DA3E417" label="Import" paletteLabel="Import" tag="-1" image="file-import-icon" id="Y2G-U4-czT"/>
+                    <toolbarItem implicitItemIdentifier="NSToolbarFlexibleSpaceItem" id="J7G-Lj-o1Q"/>
+                    <toolbarItem implicitItemIdentifier="NSToolbarSeparatorItem" id="B0k-ui-8aQ"/>
+                    <toolbarItem implicitItemIdentifier="1BBA1940-AE0B-4DFA-B6EE-A620BBC8DEC4" label="Export" paletteLabel="Export" tag="-1" image="Export-To-File-icon" id="6aJ-du-oVY"/>
+                    <toolbarItem implicitItemIdentifier="BC823788-5DAA-4B48-8122-5D7252276B3E" label="Select Data File" paletteLabel="Data file" tag="-1" image="Misc-Database-3-icon" id="Vg4-fG-QxS"/>
+                    <toolbarItem implicitItemIdentifier="48DAAED7-6EE1-4670-B31F-E22A558B82BF" label="Load Model" paletteLabel="Model File" tag="-1" image="objects-icon" id="X0j-V6-nz8"/>
+                </allowedToolbarItems>
+                <defaultToolbarItems>
+                    <toolbarItem reference="X0j-V6-nz8"/>
+                    <toolbarItem reference="Vg4-fG-QxS"/>
+                    <toolbarItem reference="J7G-Lj-o1Q"/>
+                    <toolbarItem reference="Y2G-U4-czT"/>
+                    <toolbarItem reference="6aJ-du-oVY"/>
+                    <toolbarItem reference="J7G-Lj-o1Q"/>
+                    <toolbarItem reference="Whk-gM-PkS"/>
+                    <toolbarItem reference="msa-9O-HWr"/>
+                </defaultToolbarItems>
+            </toolbar>
             <connections>
                 <outlet property="delegate" destination="-2" id="0bl-1N-x8E"/>
             </connections>
@@ -63,4 +85,10 @@
             </connections>
         </customObject>
     </objects>
+    <resources>
+        <image name="Export-To-File-icon" width="96" height="96"/>
+        <image name="Misc-Database-3-icon" width="128" height="128"/>
+        <image name="file-import-icon" width="128" height="128"/>
+        <image name="objects-icon" width="128" height="128"/>
+    </resources>
 </document>

@@ -41,6 +41,10 @@
 		1B243CF31BA978E00094ADAD /* Objective C.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1B243CEF1BA978E00094ADAD /* Objective C.plist */; };
 		1B243CF41BA978E00094ADAD /* types.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1B243CF01BA978E00094ADAD /* types.plist */; };
 		1B243CF61BA9792A0094ADAD /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B243CF51BA9792A0094ADAD /* AppKit.framework */; };
+		1B243CF91BA985720094ADAD /* Export-To-File-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B243CF81BA985720094ADAD /* Export-To-File-icon.png */; };
+		1B243CFD1BA986340094ADAD /* file-import-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B243CFC1BA986340094ADAD /* file-import-icon.png */; };
+		1B243D001BA987360094ADAD /* Misc-Database-3-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B243CFE1BA987360094ADAD /* Misc-Database-3-icon.png */; };
+		1B243D011BA987360094ADAD /* objects-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B243CFF1BA987360094ADAD /* objects-icon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -109,6 +113,10 @@
 		1B243CEF1BA978E00094ADAD /* Objective C.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Objective C.plist"; sourceTree = "<group>"; };
 		1B243CF01BA978E00094ADAD /* types.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = types.plist; sourceTree = "<group>"; };
 		1B243CF51BA9792A0094ADAD /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		1B243CF81BA985720094ADAD /* Export-To-File-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Export-To-File-icon.png"; path = "../../../../Desktop/emailButtons/MLStudio/Export-To-File-icon.png"; sourceTree = "<group>"; };
+		1B243CFC1BA986340094ADAD /* file-import-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "file-import-icon.png"; sourceTree = "<group>"; };
+		1B243CFE1BA987360094ADAD /* Misc-Database-3-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Misc-Database-3-icon.png"; sourceTree = "<group>"; };
+		1B243CFF1BA987360094ADAD /* objects-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "objects-icon.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +161,7 @@
 		1B243C801BA962840094ADAD /* MLStudio */ = {
 			isa = PBXGroup;
 			children = (
+				1B243CF71BA985500094ADAD /* Иконки панели инструментов */,
 				1B243CAA1BA962B50094ADAD /* Документация */,
 				1B243C831BA962840094ADAD /* AppDelegate.h */,
 				1B243C841BA962840094ADAD /* AppDelegate.m */,
@@ -295,6 +304,17 @@
 			name = "Syntax Definitions";
 			sourceTree = "<group>";
 		};
+		1B243CF71BA985500094ADAD /* Иконки панели инструментов */ = {
+			isa = PBXGroup;
+			children = (
+				1B243CFC1BA986340094ADAD /* file-import-icon.png */,
+				1B243CF81BA985720094ADAD /* Export-To-File-icon.png */,
+				1B243CFE1BA987360094ADAD /* Misc-Database-3-icon.png */,
+				1B243CFF1BA987360094ADAD /* objects-icon.png */,
+			);
+			name = "Иконки панели инструментов";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -379,13 +399,17 @@
 				1B243CF31BA978E00094ADAD /* Objective C.plist in Resources */,
 				1B243CF11BA978E00094ADAD /* CSS 1.plist in Resources */,
 				1B243CF41BA978E00094ADAD /* types.plist in Resources */,
+				1B243D011BA987360094ADAD /* objects-icon.png in Resources */,
 				1B243CF21BA978E00094ADAD /* HTML.plist in Resources */,
+				1B243CF91BA985720094ADAD /* Export-To-File-icon.png in Resources */,
+				1B243CFD1BA986340094ADAD /* file-import-icon.png in Resources */,
 				1B243C8D1BA962840094ADAD /* Document.xib in Resources */,
 				1B243CC01BA9734B0094ADAD /* TODO in Resources */,
 				1B243CAC1BA962E00094ADAD /* Changelog in Resources */,
 				1B243C921BA962840094ADAD /* Images.xcassets in Resources */,
 				1B243C951BA962840094ADAD /* MainMenu.xib in Resources */,
 				1B243CEC1BA978D70094ADAD /* SyntaxColorDefaults.plist in Resources */,
+				1B243D001BA987360094ADAD /* Misc-Database-3-icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
