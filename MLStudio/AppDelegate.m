@@ -16,6 +16,16 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
 	// Insert code here to initialize your application
+	
+	NSBundle *mainBundle = [NSBundle mainBundle];
+	NSString *pathName = [mainBundle pathForResource:@"Objective C" ofType:@"plist"];
+	if (pathName) {
+		NSDictionary *objeCdict = [[NSDictionary alloc] initWithContentsOfFile:pathName];
+		if (objeCdict) {
+			self.objectiveCSyntax = [[ASKSyntax alloc] initWithDefinition:objeCdict];
+		}
+	}
+	
 }
 
 - (void)applicationWillTerminate:(NSNotification *)aNotification {

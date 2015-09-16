@@ -22,6 +22,25 @@
 		1B243CBC1BA963860094ADAD /* Issue79.csv in Resources */ = {isa = PBXBuildFile; fileRef = 1B243CB51BA963860094ADAD /* Issue79.csv */; };
 		1B243CBD1BA963860094ADAD /* Unit Tests-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1B243CB61BA963860094ADAD /* Unit Tests-Info.plist */; };
 		1B243CBE1BA963860094ADAD /* UnitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B243CB91BA963860094ADAD /* UnitTests.m */; };
+		1B243CC01BA9734B0094ADAD /* TODO in Resources */ = {isa = PBXBuildFile; fileRef = 1B243CBF1BA9734B0094ADAD /* TODO */; };
+		1B243CC61BA975AA0094ADAD /* SyntaxKIT_README.md in Sources */ = {isa = PBXBuildFile; fileRef = 1B243CC51BA975AA0094ADAD /* SyntaxKIT_README.md */; };
+		1B243CD51BA978910094ADAD /* SyntaxKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B243CC81BA978910094ADAD /* SyntaxKit.m */; };
+		1B243CD61BA978910094ADAD /* ASKSyntaxViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B243CCA1BA978910094ADAD /* ASKSyntaxViewController.m */; };
+		1B243CD71BA978910094ADAD /* NSTextView+SyntaxKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B243CCC1BA978910094ADAD /* NSTextView+SyntaxKit.m */; };
+		1B243CD81BA978910094ADAD /* ASKLineNumberView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B243CCE1BA978910094ADAD /* ASKLineNumberView.m */; };
+		1B243CD91BA978910094ADAD /* ASKLineNumberMarker.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B243CD01BA978910094ADAD /* ASKLineNumberMarker.m */; };
+		1B243CDA1BA978910094ADAD /* ASKSyntax.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B243CD21BA978910094ADAD /* ASKSyntax.m */; };
+		1B243CDB1BA978910094ADAD /* ASKSyntax+syntaxForType.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B243CD41BA978910094ADAD /* ASKSyntax+syntaxForType.m */; };
+		1B243CE61BA978AA0094ADAD /* ASKTypesetter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B243CDE1BA978AA0094ADAD /* ASKTypesetter.m */; };
+		1B243CE71BA978AA0094ADAD /* NSArray+Color.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B243CE01BA978AA0094ADAD /* NSArray+Color.m */; };
+		1B243CE81BA978AA0094ADAD /* NSScanner+SkipUpToCharset.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B243CE21BA978AA0094ADAD /* NSScanner+SkipUpToCharset.m */; };
+		1B243CE91BA978AA0094ADAD /* TDBindings.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B243CE41BA978AA0094ADAD /* TDBindings.m */; };
+		1B243CEC1BA978D70094ADAD /* SyntaxColorDefaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1B243CEB1BA978D70094ADAD /* SyntaxColorDefaults.plist */; };
+		1B243CF11BA978E00094ADAD /* CSS 1.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1B243CED1BA978E00094ADAD /* CSS 1.plist */; };
+		1B243CF21BA978E00094ADAD /* HTML.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1B243CEE1BA978E00094ADAD /* HTML.plist */; };
+		1B243CF31BA978E00094ADAD /* Objective C.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1B243CEF1BA978E00094ADAD /* Objective C.plist */; };
+		1B243CF41BA978E00094ADAD /* types.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1B243CF01BA978E00094ADAD /* types.plist */; };
+		1B243CF61BA9792A0094ADAD /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B243CF51BA9792A0094ADAD /* AppKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +78,37 @@
 		1B243CB71BA963860094ADAD /* UnitTestContent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnitTestContent.h; sourceTree = "<group>"; };
 		1B243CB81BA963860094ADAD /* UnitTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnitTests.h; sourceTree = "<group>"; };
 		1B243CB91BA963860094ADAD /* UnitTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UnitTests.m; sourceTree = "<group>"; };
+		1B243CBF1BA9734B0094ADAD /* TODO */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TODO; sourceTree = "<group>"; };
+		1B243CC51BA975AA0094ADAD /* SyntaxKIT_README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = SyntaxKIT_README.md; sourceTree = "<group>"; };
+		1B243CC71BA978910094ADAD /* SyntaxKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SyntaxKit.h; sourceTree = "<group>"; };
+		1B243CC81BA978910094ADAD /* SyntaxKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SyntaxKit.m; sourceTree = "<group>"; };
+		1B243CC91BA978910094ADAD /* ASKSyntaxViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASKSyntaxViewController.h; sourceTree = "<group>"; };
+		1B243CCA1BA978910094ADAD /* ASKSyntaxViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASKSyntaxViewController.m; sourceTree = "<group>"; };
+		1B243CCB1BA978910094ADAD /* NSTextView+SyntaxKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTextView+SyntaxKit.h"; sourceTree = "<group>"; };
+		1B243CCC1BA978910094ADAD /* NSTextView+SyntaxKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTextView+SyntaxKit.m"; sourceTree = "<group>"; };
+		1B243CCD1BA978910094ADAD /* ASKLineNumberView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASKLineNumberView.h; sourceTree = "<group>"; };
+		1B243CCE1BA978910094ADAD /* ASKLineNumberView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASKLineNumberView.m; sourceTree = "<group>"; };
+		1B243CCF1BA978910094ADAD /* ASKLineNumberMarker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASKLineNumberMarker.h; sourceTree = "<group>"; };
+		1B243CD01BA978910094ADAD /* ASKLineNumberMarker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASKLineNumberMarker.m; sourceTree = "<group>"; };
+		1B243CD11BA978910094ADAD /* ASKSyntax.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASKSyntax.h; sourceTree = "<group>"; };
+		1B243CD21BA978910094ADAD /* ASKSyntax.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASKSyntax.m; sourceTree = "<group>"; };
+		1B243CD31BA978910094ADAD /* ASKSyntax+syntaxForType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ASKSyntax+syntaxForType.h"; sourceTree = "<group>"; };
+		1B243CD41BA978910094ADAD /* ASKSyntax+syntaxForType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ASKSyntax+syntaxForType.m"; sourceTree = "<group>"; };
+		1B243CDD1BA978AA0094ADAD /* ASKTypesetter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASKTypesetter.h; sourceTree = "<group>"; };
+		1B243CDE1BA978AA0094ADAD /* ASKTypesetter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASKTypesetter.m; sourceTree = "<group>"; };
+		1B243CDF1BA978AA0094ADAD /* NSArray+Color.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Color.h"; sourceTree = "<group>"; };
+		1B243CE01BA978AA0094ADAD /* NSArray+Color.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Color.m"; sourceTree = "<group>"; };
+		1B243CE11BA978AA0094ADAD /* NSScanner+SkipUpToCharset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSScanner+SkipUpToCharset.h"; sourceTree = "<group>"; };
+		1B243CE21BA978AA0094ADAD /* NSScanner+SkipUpToCharset.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSScanner+SkipUpToCharset.m"; sourceTree = "<group>"; };
+		1B243CE31BA978AA0094ADAD /* TDBindings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TDBindings.h; sourceTree = "<group>"; };
+		1B243CE41BA978AA0094ADAD /* TDBindings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TDBindings.m; sourceTree = "<group>"; };
+		1B243CE51BA978AA0094ADAD /* UKHelperMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UKHelperMacros.h; sourceTree = "<group>"; };
+		1B243CEB1BA978D70094ADAD /* SyntaxColorDefaults.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SyntaxColorDefaults.plist; sourceTree = "<group>"; };
+		1B243CED1BA978E00094ADAD /* CSS 1.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "CSS 1.plist"; sourceTree = "<group>"; };
+		1B243CEE1BA978E00094ADAD /* HTML.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = HTML.plist; sourceTree = "<group>"; };
+		1B243CEF1BA978E00094ADAD /* Objective C.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Objective C.plist"; sourceTree = "<group>"; };
+		1B243CF01BA978E00094ADAD /* types.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = types.plist; sourceTree = "<group>"; };
+		1B243CF51BA9792A0094ADAD /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +116,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B243CF61BA9792A0094ADAD /* AppKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,6 +135,7 @@
 			children = (
 				1B243CAD1BA962FD0094ADAD /* 3rdParty Components */,
 				1B243C801BA962840094ADAD /* MLStudio */,
+				1B243CC11BA975520094ADAD /* Frameworks */,
 				1B243C9D1BA962850094ADAD /* MLStudioTests */,
 				1B243C7F1BA962840094ADAD /* Products */,
 			);
@@ -146,6 +198,7 @@
 			isa = PBXGroup;
 			children = (
 				1B243CAB1BA962E00094ADAD /* Changelog */,
+				1B243CBF1BA9734B0094ADAD /* TODO */,
 			);
 			name = "Документация";
 			sourceTree = "<group>";
@@ -153,6 +206,7 @@
 		1B243CAD1BA962FD0094ADAD /* 3rdParty Components */ = {
 			isa = PBXGroup;
 			children = (
+				1B243CC41BA975990094ADAD /* SyntaxKit */,
 				1B243CAE1BA963180094ADAD /* CSV Parser */,
 			);
 			name = "3rdParty Components";
@@ -179,6 +233,66 @@
 				1B243CB91BA963860094ADAD /* UnitTests.m */,
 			);
 			name = CSVParser;
+			sourceTree = "<group>";
+		};
+		1B243CC11BA975520094ADAD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1B243CF51BA9792A0094ADAD /* AppKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1B243CC41BA975990094ADAD /* SyntaxKit */ = {
+			isa = PBXGroup;
+			children = (
+				1B243CC71BA978910094ADAD /* SyntaxKit.h */,
+				1B243CC81BA978910094ADAD /* SyntaxKit.m */,
+				1B243CC91BA978910094ADAD /* ASKSyntaxViewController.h */,
+				1B243CCA1BA978910094ADAD /* ASKSyntaxViewController.m */,
+				1B243CCB1BA978910094ADAD /* NSTextView+SyntaxKit.h */,
+				1B243CCC1BA978910094ADAD /* NSTextView+SyntaxKit.m */,
+				1B243CCD1BA978910094ADAD /* ASKLineNumberView.h */,
+				1B243CCE1BA978910094ADAD /* ASKLineNumberView.m */,
+				1B243CCF1BA978910094ADAD /* ASKLineNumberMarker.h */,
+				1B243CD01BA978910094ADAD /* ASKLineNumberMarker.m */,
+				1B243CD11BA978910094ADAD /* ASKSyntax.h */,
+				1B243CD21BA978910094ADAD /* ASKSyntax.m */,
+				1B243CD31BA978910094ADAD /* ASKSyntax+syntaxForType.h */,
+				1B243CD41BA978910094ADAD /* ASKSyntax+syntaxForType.m */,
+				1B243CC51BA975AA0094ADAD /* SyntaxKIT_README.md */,
+				1B243CEA1BA978BA0094ADAD /* Syntax Definitions */,
+				1B243CDC1BA978990094ADAD /* Utilities */,
+			);
+			name = SyntaxKit;
+			sourceTree = "<group>";
+		};
+		1B243CDC1BA978990094ADAD /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				1B243CDD1BA978AA0094ADAD /* ASKTypesetter.h */,
+				1B243CDE1BA978AA0094ADAD /* ASKTypesetter.m */,
+				1B243CDF1BA978AA0094ADAD /* NSArray+Color.h */,
+				1B243CE01BA978AA0094ADAD /* NSArray+Color.m */,
+				1B243CE11BA978AA0094ADAD /* NSScanner+SkipUpToCharset.h */,
+				1B243CE21BA978AA0094ADAD /* NSScanner+SkipUpToCharset.m */,
+				1B243CE31BA978AA0094ADAD /* TDBindings.h */,
+				1B243CE41BA978AA0094ADAD /* TDBindings.m */,
+				1B243CE51BA978AA0094ADAD /* UKHelperMacros.h */,
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
+		1B243CEA1BA978BA0094ADAD /* Syntax Definitions */ = {
+			isa = PBXGroup;
+			children = (
+				1B243CEB1BA978D70094ADAD /* SyntaxColorDefaults.plist */,
+				1B243CED1BA978E00094ADAD /* CSS 1.plist */,
+				1B243CEE1BA978E00094ADAD /* HTML.plist */,
+				1B243CEF1BA978E00094ADAD /* Objective C.plist */,
+				1B243CF01BA978E00094ADAD /* types.plist */,
+			);
+			name = "Syntax Definitions";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -230,6 +344,7 @@
 				TargetAttributes = {
 					1B243C7D1BA962840094ADAD = {
 						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = UKBNTL7HA9;
 					};
 					1B243C991BA962850094ADAD = {
 						CreatedOnToolsVersion = 6.4;
@@ -261,10 +376,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B243CF31BA978E00094ADAD /* Objective C.plist in Resources */,
+				1B243CF11BA978E00094ADAD /* CSS 1.plist in Resources */,
+				1B243CF41BA978E00094ADAD /* types.plist in Resources */,
+				1B243CF21BA978E00094ADAD /* HTML.plist in Resources */,
 				1B243C8D1BA962840094ADAD /* Document.xib in Resources */,
+				1B243CC01BA9734B0094ADAD /* TODO in Resources */,
 				1B243CAC1BA962E00094ADAD /* Changelog in Resources */,
 				1B243C921BA962840094ADAD /* Images.xcassets in Resources */,
 				1B243C951BA962840094ADAD /* MainMenu.xib in Resources */,
+				1B243CEC1BA978D70094ADAD /* SyntaxColorDefaults.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,11 +407,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B243CD91BA978910094ADAD /* ASKLineNumberMarker.m in Sources */,
+				1B243CC61BA975AA0094ADAD /* SyntaxKIT_README.md in Sources */,
+				1B243CD61BA978910094ADAD /* ASKSyntaxViewController.m in Sources */,
+				1B243CDB1BA978910094ADAD /* ASKSyntax+syntaxForType.m in Sources */,
 				1B243C901BA962840094ADAD /* Document.xcdatamodeld in Sources */,
+				1B243CE81BA978AA0094ADAD /* NSScanner+SkipUpToCharset.m in Sources */,
+				1B243CDA1BA978910094ADAD /* ASKSyntax.m in Sources */,
+				1B243CE71BA978AA0094ADAD /* NSArray+Color.m in Sources */,
+				1B243CD71BA978910094ADAD /* NSTextView+SyntaxKit.m in Sources */,
+				1B243CD51BA978910094ADAD /* SyntaxKit.m in Sources */,
+				1B243CE61BA978AA0094ADAD /* ASKTypesetter.m in Sources */,
 				1B243C8A1BA962840094ADAD /* Document.m in Sources */,
 				1B243C871BA962840094ADAD /* main.m in Sources */,
 				1B243CB11BA963640094ADAD /* CHCSVParser.m in Sources */,
+				1B243CE91BA978AA0094ADAD /* TDBindings.m in Sources */,
 				1B243C851BA962840094ADAD /* AppDelegate.m in Sources */,
+				1B243CD81BA978910094ADAD /* ASKLineNumberView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,7 +549,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Developer ID Application";
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = MLStudio/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -427,7 +565,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Developer ID Application";
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = MLStudio/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";

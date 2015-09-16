@@ -7,6 +7,10 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "SyntaxKit.h"
 
 @interface Document : NSPersistentDocument
+
+@property (strong) IBOutlet ASKSyntaxViewController *syntaxViewController;
+
 @end

@@ -7,9 +7,11 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "SyntaxKit.h"
 
 @interface AppDelegate : NSObject <NSApplicationDelegate>
 
+@property (nonatomic, strong) ASKSyntax *objectiveCSyntax;
 
 @end
 

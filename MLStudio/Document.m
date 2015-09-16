@@ -7,6 +7,7 @@
 //
 
 #import "Document.h"
+#import "AppDelegate.h"
 
 @interface Document ()
 
@@ -22,9 +23,17 @@
     return self;
 }
 
-- (void)windowControllerDidLoadNib:(NSWindowController *)aController {
+
+// Метод исопльзуетс для инициализации объектов при загрузке окна документа
+- (void)windowControllerDidLoadNib:(NSWindowController *)aController
+{
 	[super windowControllerDidLoadNib:aController];
-	// Add any code here that needs to be executed once the windowController has loaded the document's window.
+
+	AppDelegate *d = (AppDelegate *)[[NSApplication sharedApplication] delegate];
+	// настраиваем окно синтаксизатора
+	self.syntaxViewController.syntax = d.objectiveCSyntax;
+	self.syntaxViewController.showsLineNumbers = YES;
+	
 }
 
 + (BOOL)autosavesInPlace {
