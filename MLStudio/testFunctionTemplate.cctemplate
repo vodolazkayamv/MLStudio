@@ -1,0 +1,14 @@
+//
+//  testFunctionTemplate.c
+//  MLStudio
+//
+//  Created by %@. on %@
+//
+
+int testFunction(int *arr, int num)
+{
+
+return 0;
+}
+
+

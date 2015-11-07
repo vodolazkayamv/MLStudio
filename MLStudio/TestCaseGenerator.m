@@ -18,7 +18,17 @@
 	[df setDateStyle:NSDateFormatterMediumStyle];
 	NSString *dateString = [df stringFromDate:[NSDate date]];
 	NSString *userName = NSFullUserName();
-	return [NSString stringWithFormat:@"/*\n    MLStudio. \n    Copyright (C) %@, %@\n*/\n\n int testFunction(int a, int b, int c)\n{\n\n\n}",userName, dateString];
+	
+	NSBundle *mb = [NSBundle mainBundle];
+	NSString *tPath = [mb pathForResource:@"testFunctionTemplate" ofType:@"cctemplate"];
+	if (tPath) {
+		NSError *error = nil;
+		NSString *formatString = [NSString stringWithContentsOfFile:tPath encoding:NSUTF8StringEncoding error:&error];
+		if (!error) {
+			return [NSString stringWithFormat:formatString, userName, dateString];
+		}
+	}
+		return @"";
 }
 
 
