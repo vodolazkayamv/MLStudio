@@ -47,6 +47,7 @@
 		1B243D011BA987360094ADAD /* objects-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B243CFF1BA987360094ADAD /* objects-icon.png */; };
 		1BCCEE741BEE05D900809268 /* TestCaseGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BCCEE731BEE05D900809268 /* TestCaseGenerator.m */; };
 		1BFEED051BEE146F002F095D /* testFunctionTemplate.cctemplate in Resources */ = {isa = PBXBuildFile; fileRef = 1BFEED041BEE146F002F095D /* testFunctionTemplate.cctemplate */; };
+		1BFEED071BEE1EE9002F095D /* Initializer.cctemplate in Resources */ = {isa = PBXBuildFile; fileRef = 1BFEED061BEE1EE9002F095D /* Initializer.cctemplate */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -123,6 +124,7 @@
 		1BCCEE721BEE05D900809268 /* TestCaseGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestCaseGenerator.h; sourceTree = "<group>"; };
 		1BCCEE731BEE05D900809268 /* TestCaseGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestCaseGenerator.m; sourceTree = "<group>"; };
 		1BFEED041BEE146F002F095D /* testFunctionTemplate.cctemplate */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = testFunctionTemplate.cctemplate; sourceTree = "<group>"; };
+		1BFEED061BEE1EE9002F095D /* Initializer.cctemplate */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Initializer.cctemplate; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -328,6 +330,7 @@
 			children = (
 				1BCCEE721BEE05D900809268 /* TestCaseGenerator.h */,
 				1BCCEE731BEE05D900809268 /* TestCaseGenerator.m */,
+				1BFEED061BEE1EE9002F095D /* Initializer.cctemplate */,
 				1BFEED041BEE146F002F095D /* testFunctionTemplate.cctemplate */,
 			);
 			name = TestGenerator;
@@ -422,6 +425,7 @@
 				1B243CF21BA978E00094ADAD /* HTML.plist in Resources */,
 				1B243CF91BA985720094ADAD /* Export-To-File-icon.png in Resources */,
 				1B243CFD1BA986340094ADAD /* file-import-icon.png in Resources */,
+				1BFEED071BEE1EE9002F095D /* Initializer.cctemplate in Resources */,
 				1B243C8D1BA962840094ADAD /* Document.xib in Resources */,
 				1B243CC01BA9734B0094ADAD /* TODO in Resources */,
 				1B243CAC1BA962E00094ADAD /* Changelog in Resources */,

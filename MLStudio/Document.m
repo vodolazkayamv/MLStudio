@@ -41,12 +41,20 @@
 	if (self.generateButtonEnabled == NO) {
 		[self.syntaxViewController.view setString:generator.template];
 	}
+	if ([self callTemplateEnabled] == NO) {
+		[self.initalizerViewController.view setString:generator.callTemplate];
+	}
 	
 }
 
 - (BOOL) generateButtonEnabled
 {
 	return ([self.syntaxViewController.view.textStorage  string].length > 0);
+}
+
+- (BOOL) callTemplateEnabled
+{
+	return ([self.initalizerViewController.view.textStorage  string].length > 0);
 }
 
 
@@ -63,8 +71,12 @@
 - (IBAction)testModule:(id)sender
 {
 	if (self.generateButtonEnabled) {
-		// обънкт не пустой, пытаемся создать и сгененрировать файл
-		
+		// объект не пустой, пытаемся создать и сгененрировать файл
+		generator.subroutineToTest = [self.syntaxViewController.view.textStorage  string];
+		NSString *generatedTestFile = [generator createTestApp];
+		if (generatedTestFile) {
+			NSLog(@"Файл -%@", generatedTestFile);
+		}
 	}
 }
 @end

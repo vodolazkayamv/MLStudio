@@ -15,6 +15,7 @@
 
 @property (strong) IBOutlet ASKSyntaxViewController *syntaxViewController;
 @property (weak) IBOutlet NSScrollView *logWindow;
+@property (strong) IBOutlet ASKSyntaxViewController *initalizerViewController;
 
 @property (nonatomic, readonly) IBOutlet BOOL generateButtonEnabled;
 
