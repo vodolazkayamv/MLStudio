@@ -45,6 +45,7 @@
 		1B243CFD1BA986340094ADAD /* file-import-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B243CFC1BA986340094ADAD /* file-import-icon.png */; };
 		1B243D001BA987360094ADAD /* Misc-Database-3-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B243CFE1BA987360094ADAD /* Misc-Database-3-icon.png */; };
 		1B243D011BA987360094ADAD /* objects-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B243CFF1BA987360094ADAD /* objects-icon.png */; };
+		1BCCEE741BEE05D900809268 /* TestCaseGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BCCEE731BEE05D900809268 /* TestCaseGenerator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -117,6 +118,9 @@
 		1B243CFC1BA986340094ADAD /* file-import-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "file-import-icon.png"; sourceTree = "<group>"; };
 		1B243CFE1BA987360094ADAD /* Misc-Database-3-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Misc-Database-3-icon.png"; sourceTree = "<group>"; };
 		1B243CFF1BA987360094ADAD /* objects-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "objects-icon.png"; sourceTree = "<group>"; };
+		1BCCEE701BEE04BA00809268 /* MLStudioErrors.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MLStudioErrors.h; sourceTree = "<group>"; };
+		1BCCEE721BEE05D900809268 /* TestCaseGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestCaseGenerator.h; sourceTree = "<group>"; };
+		1BCCEE731BEE05D900809268 /* TestCaseGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestCaseGenerator.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +165,7 @@
 		1B243C801BA962840094ADAD /* MLStudio */ = {
 			isa = PBXGroup;
 			children = (
+				1BCCEE711BEE05B800809268 /* TestGenerator */,
 				1B243CF71BA985500094ADAD /* Иконки панели инструментов */,
 				1B243CAA1BA962B50094ADAD /* Документация */,
 				1B243C831BA962840094ADAD /* AppDelegate.h */,
@@ -172,6 +177,7 @@
 				1B243C931BA962840094ADAD /* MainMenu.xib */,
 				1B243C8E1BA962840094ADAD /* Document.xcdatamodeld */,
 				1B243C811BA962840094ADAD /* Supporting Files */,
+				1BCCEE701BEE04BA00809268 /* MLStudioErrors.h */,
 			);
 			path = MLStudio;
 			sourceTree = "<group>";
@@ -315,6 +321,15 @@
 			name = "Иконки панели инструментов";
 			sourceTree = "<group>";
 		};
+		1BCCEE711BEE05B800809268 /* TestGenerator */ = {
+			isa = PBXGroup;
+			children = (
+				1BCCEE721BEE05D900809268 /* TestCaseGenerator.h */,
+				1BCCEE731BEE05D900809268 /* TestCaseGenerator.m */,
+			);
+			name = TestGenerator;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -446,6 +461,7 @@
 				1B243C871BA962840094ADAD /* main.m in Sources */,
 				1B243CB11BA963640094ADAD /* CHCSVParser.m in Sources */,
 				1B243CE91BA978AA0094ADAD /* TDBindings.m in Sources */,
+				1BCCEE741BEE05D900809268 /* TestCaseGenerator.m in Sources */,
 				1B243C851BA962840094ADAD /* AppDelegate.m in Sources */,
 				1B243CD81BA978910094ADAD /* ASKLineNumberView.m in Sources */,
 			);
@@ -656,6 +672,7 @@
 				1B243CA61BA962850094ADAD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1B243CA71BA962850094ADAD /* Build configuration list for PBXNativeTarget "MLStudioTests" */ = {
 			isa = XCConfigurationList;
@@ -664,6 +681,7 @@
 				1B243CA91BA962850094ADAD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
