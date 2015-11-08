@@ -8,8 +8,10 @@
 
 #import "TestCaseGenerator.h"
 
+
 NSString * const WorkingDirectory	=	@"BUILD";
 NSString * const TESTFILE			=	@"TestFile.c";
+NSString * const OUTFILE			=	@"TestExecutable";
 
 @implementation TestCaseGenerator
 
@@ -69,19 +71,26 @@ NSString * const TESTFILE			=	@"TestFile.c";
 }
 
 
-- (NSString *) createTestApp
+- (NSString *) createTestApp:(Algorithm *)alg
 {
 	NSBundle *mb = [NSBundle mainBundle];
-	NSString *mPath = [mb pathForResource:@"MainFile" ofType:@"cctemplate"];
+	NSString *mPath = [mb pathForResource:@"Mainfile" ofType:@"cctemplate"];
 	if (mPath) {
 		NSError *error = nil;
 		NSString *mainFile = [ NSString stringWithContentsOfFile:mPath encoding:NSUTF8StringEncoding
 																		 error:&error];
 		if (!error) {
 			NSRange replaceZone = [mainFile rangeOfString:@"<<<PutFunctionHere>>>"];
-			if (replaceZone.location != NSNotFound && self.subroutineToTest) {
+			if (replaceZone.location != NSNotFound) {
 				mainFile = [mainFile stringByReplacingCharactersInRange:replaceZone
-															 withString:self.subroutineToTest];
+															 withString:alg.algorithm];
+				// вторая часть - замена фрагмента вызова функции и ее начальных данных
+				
+				replaceZone = [mainFile rangeOfString:@"<<<PutCallHere>>>"];
+				if (replaceZone.location != NSNotFound) {
+					mainFile = [mainFile stringByReplacingCharactersInRange:replaceZone withString:alg.callingFragment];
+				}
+				
 				// Теперь нам надо сохранить эту строчку в виде текстового файла в специальном каталоге
 				NSString *wdFile = [[self appDictionary] stringByAppendingPathComponent:TESTFILE];
 				NSFileManager *fm = [NSFileManager defaultManager];
@@ -100,6 +109,54 @@ NSString * const TESTFILE			=	@"TestFile.c";
 	
 	
 	return nil;
+}
+
+
+- (BOOL) compileFile
+{
+	NSString *wdFile = [[self appDictionary] stringByAppendingPathComponent:TESTFILE];
+	NSString *outFile = [[self appDictionary] stringByAppendingPathComponent:OUTFILE];
+
+	// флормируем задачу и ее параметры
+	NSTask *task = [[NSTask alloc] init];
+	[task setLaunchPath:@"/usr/bin/gcc"];
+	NSArray *args = @[wdFile, @"-o", outFile];
+	task.arguments = args;
+	
+	// Формируем конвейер для вывода результатов комиляции
+	NSPipe *outPipe = [[NSPipe alloc] init];
+	[task setStandardOutput:outPipe];
+	[task setStandardError:outPipe];
+	
+	// стартуем задачу
+	[task launch];
+	
+	NSData *outData = [[outPipe fileHandleForReading] readDataToEndOfFile];
+	self.compilationResult = [[NSString alloc] initWithData:outData encoding:NSUTF8StringEncoding];
+	
+	return (task.terminationStatus == 0);
+}
+
+- (BOOL) executeTestFile
+{
+	NSString *outFile = [[self appDictionary] stringByAppendingPathComponent:OUTFILE];
+	NSTask *task = [[NSTask alloc] init];
+	
+	task.launchPath = outFile;
+	
+	NSPipe *outPipe = [[NSPipe alloc] init];
+	[task setStandardOutput:outPipe];
+	[task setStandardError:outPipe];
+	
+	// стартуем задачу
+	[task launch];
+	
+	NSData *outData = [[outPipe fileHandleForReading] readDataToEndOfFile];
+
+	self.executionResult = [[NSString alloc] initWithData:outData encoding:NSUTF8StringEncoding];
+	
+	return (task.terminationStatus == 0);
+	
 }
 
 @end

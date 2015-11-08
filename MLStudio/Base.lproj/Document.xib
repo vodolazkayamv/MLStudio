@@ -7,7 +7,10 @@
         <customObject id="-2" userLabel="File's Owner" customClass="Document">
             <connections>
                 <outlet property="initalizerViewController" destination="oPO-a7-zpB" id="Bfy-98-p4Y"/>
+                <outlet property="logView" destination="51n-Ol-yWK" id="7lB-nJ-hYG"/>
                 <outlet property="logWindow" destination="RWj-Yn-4nA" id="Lok-84-VEy"/>
+                <outlet property="scrollView" destination="RWj-Yn-4nA" id="mw1-rU-agm"/>
+                <outlet property="showMEssageWindow" destination="o2R-YD-138" id="8co-gv-VGZ"/>
                 <outlet property="syntaxViewController" destination="t2Y-2m-QOL" id="HuF-I7-sWE"/>
                 <outlet property="window" destination="xOd-HO-29H" id="JIz-fz-R2o"/>
             </connections>
@@ -119,6 +122,14 @@
                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                     </textField>
+                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="o2R-YD-138">
+                        <rect key="frame" x="6" y="21" width="211" height="32"/>
+                        <animations/>
+                        <buttonCell key="cell" type="push" title="Окно сообщений" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="KmJ-Uu-0h5">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                    </button>
                     <scrollView fixedFrame="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ckO-la-xVL">
                         <rect key="frame" x="12" y="104" width="618" height="192"/>
                         <clipView key="contentView" ambiguous="YES" id="ils-MY-jxu">

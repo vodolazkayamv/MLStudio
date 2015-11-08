@@ -12,11 +12,14 @@
 @interface Document : NSPersistentDocument
 
 - (IBAction)testModule:(id)sender;
+@property (weak) IBOutlet NSButton *showMEssageWindow;
 
 @property (strong) IBOutlet ASKSyntaxViewController *syntaxViewController;
-@property (weak) IBOutlet NSScrollView *logWindow;
-@property (strong) IBOutlet ASKSyntaxViewController *initalizerViewController;
 
-@property (nonatomic, readonly) IBOutlet BOOL generateButtonEnabled;
+@property (strong) IBOutlet ASKSyntaxViewController *initalizerViewController;
+@property (weak) IBOutlet NSScrollView *scrollView;
+@property (unsafe_unretained) IBOutlet NSTextView *logView;
+
+@property (nonatomic, readonly)  BOOL generateButtonEnabled;
 
 @end

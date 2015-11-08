@@ -45,6 +45,9 @@
 		1B243CFD1BA986340094ADAD /* file-import-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B243CFC1BA986340094ADAD /* file-import-icon.png */; };
 		1B243D001BA987360094ADAD /* Misc-Database-3-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B243CFE1BA987360094ADAD /* Misc-Database-3-icon.png */; };
 		1B243D011BA987360094ADAD /* objects-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B243CFF1BA987360094ADAD /* objects-icon.png */; };
+		1BC9CDA51BEF474800A966A6 /* Algorithm+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BC9CDA21BEF474800A966A6 /* Algorithm+CoreDataProperties.m */; };
+		1BC9CDA61BEF474800A966A6 /* Algorithm.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BC9CDA41BEF474800A966A6 /* Algorithm.m */; };
+		1BC9CDA81BEF4DF100A966A6 /* Mainfile.cctemplate in Resources */ = {isa = PBXBuildFile; fileRef = 1BC9CDA71BEF4DF100A966A6 /* Mainfile.cctemplate */; };
 		1BCCEE741BEE05D900809268 /* TestCaseGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BCCEE731BEE05D900809268 /* TestCaseGenerator.m */; };
 		1BFEED051BEE146F002F095D /* testFunctionTemplate.cctemplate in Resources */ = {isa = PBXBuildFile; fileRef = 1BFEED041BEE146F002F095D /* testFunctionTemplate.cctemplate */; };
 		1BFEED071BEE1EE9002F095D /* Initializer.cctemplate in Resources */ = {isa = PBXBuildFile; fileRef = 1BFEED061BEE1EE9002F095D /* Initializer.cctemplate */; };
@@ -120,6 +123,11 @@
 		1B243CFC1BA986340094ADAD /* file-import-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "file-import-icon.png"; sourceTree = "<group>"; };
 		1B243CFE1BA987360094ADAD /* Misc-Database-3-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Misc-Database-3-icon.png"; sourceTree = "<group>"; };
 		1B243CFF1BA987360094ADAD /* objects-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "objects-icon.png"; sourceTree = "<group>"; };
+		1BC9CDA11BEF474800A966A6 /* Algorithm+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Algorithm+CoreDataProperties.h"; sourceTree = "<group>"; };
+		1BC9CDA21BEF474800A966A6 /* Algorithm+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Algorithm+CoreDataProperties.m"; sourceTree = "<group>"; };
+		1BC9CDA31BEF474800A966A6 /* Algorithm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Algorithm.h; sourceTree = "<group>"; };
+		1BC9CDA41BEF474800A966A6 /* Algorithm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Algorithm.m; sourceTree = "<group>"; };
+		1BC9CDA71BEF4DF100A966A6 /* Mainfile.cctemplate */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Mainfile.cctemplate; sourceTree = "<group>"; };
 		1BCCEE701BEE04BA00809268 /* MLStudioErrors.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MLStudioErrors.h; sourceTree = "<group>"; };
 		1BCCEE721BEE05D900809268 /* TestCaseGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestCaseGenerator.h; sourceTree = "<group>"; };
 		1BCCEE731BEE05D900809268 /* TestCaseGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestCaseGenerator.m; sourceTree = "<group>"; };
@@ -180,6 +188,10 @@
 				1B243C911BA962840094ADAD /* Images.xcassets */,
 				1B243C931BA962840094ADAD /* MainMenu.xib */,
 				1B243C8E1BA962840094ADAD /* Document.xcdatamodeld */,
+				1BC9CDA11BEF474800A966A6 /* Algorithm+CoreDataProperties.h */,
+				1BC9CDA21BEF474800A966A6 /* Algorithm+CoreDataProperties.m */,
+				1BC9CDA31BEF474800A966A6 /* Algorithm.h */,
+				1BC9CDA41BEF474800A966A6 /* Algorithm.m */,
 				1B243C811BA962840094ADAD /* Supporting Files */,
 				1BCCEE701BEE04BA00809268 /* MLStudioErrors.h */,
 			);
@@ -332,6 +344,7 @@
 				1BCCEE731BEE05D900809268 /* TestCaseGenerator.m */,
 				1BFEED061BEE1EE9002F095D /* Initializer.cctemplate */,
 				1BFEED041BEE146F002F095D /* testFunctionTemplate.cctemplate */,
+				1BC9CDA71BEF4DF100A966A6 /* Mainfile.cctemplate */,
 			);
 			name = TestGenerator;
 			sourceTree = "<group>";
@@ -431,6 +444,7 @@
 				1B243CAC1BA962E00094ADAD /* Changelog in Resources */,
 				1B243C921BA962840094ADAD /* Images.xcassets in Resources */,
 				1B243C951BA962840094ADAD /* MainMenu.xib in Resources */,
+				1BC9CDA81BEF4DF100A966A6 /* Mainfile.cctemplate in Resources */,
 				1B243CEC1BA978D70094ADAD /* SyntaxColorDefaults.plist in Resources */,
 				1B243D001BA987360094ADAD /* Misc-Database-3-icon.png in Resources */,
 			);
@@ -459,11 +473,13 @@
 				1B243CD61BA978910094ADAD /* ASKSyntaxViewController.m in Sources */,
 				1B243CDB1BA978910094ADAD /* ASKSyntax+syntaxForType.m in Sources */,
 				1B243C901BA962840094ADAD /* Document.xcdatamodeld in Sources */,
+				1BC9CDA61BEF474800A966A6 /* Algorithm.m in Sources */,
 				1B243CE81BA978AA0094ADAD /* NSScanner+SkipUpToCharset.m in Sources */,
 				1B243CDA1BA978910094ADAD /* ASKSyntax.m in Sources */,
 				1B243CE71BA978AA0094ADAD /* NSArray+Color.m in Sources */,
 				1B243CD71BA978910094ADAD /* NSTextView+SyntaxKit.m in Sources */,
 				1B243CD51BA978910094ADAD /* SyntaxKit.m in Sources */,
+				1BC9CDA51BEF474800A966A6 /* Algorithm+CoreDataProperties.m in Sources */,
 				1B243CE61BA978AA0094ADAD /* ASKTypesetter.m in Sources */,
 				1B243C8A1BA962840094ADAD /* Document.m in Sources */,
 				1B243C871BA962840094ADAD /* main.m in Sources */,
