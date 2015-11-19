@@ -32,12 +32,13 @@
 }
 
 
-// Метод исопльзуетс для инициализации объектов при загрузке окна документа
+// Метод используется для инициализации объектов при загрузке окна документа
 - (void)windowControllerDidLoadNib:(NSWindowController *)aController
 {
 	[super windowControllerDidLoadNib:aController];
 	
-	NSFetchRequest *req = [[NSFetchRequest alloc] initWithEntityName:[[Algorithm class] description]];
+	NSFetchRequest *req = [[NSFetchRequest alloc]
+                           initWithEntityName:[[Algorithm class] description]];
 	NSError *error = nil;
 	NSArray *res = [self.managedObjectContext executeFetchRequest:req error:&error];
 	if (!error && res.count > 0) {
@@ -46,13 +47,15 @@
 	} else {
 		currentAlgorithm = [NSEntityDescription insertNewObjectForEntityForName:[[Algorithm class] description]
 														 inManagedObjectContext:self.managedObjectContext];
-		currentAlgorithm.algorithm = generator.template;
+		currentAlgorithm.algorithm = generator.templatef;
 		currentAlgorithm.callingFragment = generator.callTemplate;
 		newDocument = YES;
 	}
 
 	AppDelegate *d = (AppDelegate *)[[NSApplication sharedApplication] delegate];
-	// настраиваем окно синтаксизатора
+	
+    
+    // настраиваем окно синтаксизатора
 	self.syntaxViewController.syntax = d.objectiveCSyntax;
 	self.syntaxViewController.showsLineNumbers = YES;
 	

@@ -41,7 +41,6 @@
 		1B243CF31BA978E00094ADAD /* Objective C.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1B243CEF1BA978E00094ADAD /* Objective C.plist */; };
 		1B243CF41BA978E00094ADAD /* types.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1B243CF01BA978E00094ADAD /* types.plist */; };
 		1B243CF61BA9792A0094ADAD /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B243CF51BA9792A0094ADAD /* AppKit.framework */; };
-		1B243CF91BA985720094ADAD /* Export-To-File-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B243CF81BA985720094ADAD /* Export-To-File-icon.png */; };
 		1B243CFD1BA986340094ADAD /* file-import-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B243CFC1BA986340094ADAD /* file-import-icon.png */; };
 		1B243D001BA987360094ADAD /* Misc-Database-3-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B243CFE1BA987360094ADAD /* Misc-Database-3-icon.png */; };
 		1B243D011BA987360094ADAD /* objects-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B243CFF1BA987360094ADAD /* objects-icon.png */; };
@@ -119,7 +118,6 @@
 		1B243CEF1BA978E00094ADAD /* Objective C.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Objective C.plist"; sourceTree = "<group>"; };
 		1B243CF01BA978E00094ADAD /* types.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = types.plist; sourceTree = "<group>"; };
 		1B243CF51BA9792A0094ADAD /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
-		1B243CF81BA985720094ADAD /* Export-To-File-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Export-To-File-icon.png"; path = "../../../../Desktop/emailButtons/MLStudio/Export-To-File-icon.png"; sourceTree = "<group>"; };
 		1B243CFC1BA986340094ADAD /* file-import-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "file-import-icon.png"; sourceTree = "<group>"; };
 		1B243CFE1BA987360094ADAD /* Misc-Database-3-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Misc-Database-3-icon.png"; sourceTree = "<group>"; };
 		1B243CFF1BA987360094ADAD /* objects-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "objects-icon.png"; sourceTree = "<group>"; };
@@ -330,7 +328,6 @@
 			isa = PBXGroup;
 			children = (
 				1B243CFC1BA986340094ADAD /* file-import-icon.png */,
-				1B243CF81BA985720094ADAD /* Export-To-File-icon.png */,
 				1B243CFE1BA987360094ADAD /* Misc-Database-3-icon.png */,
 				1B243CFF1BA987360094ADAD /* objects-icon.png */,
 			);
@@ -436,7 +433,6 @@
 				1B243CF41BA978E00094ADAD /* types.plist in Resources */,
 				1B243D011BA987360094ADAD /* objects-icon.png in Resources */,
 				1B243CF21BA978E00094ADAD /* HTML.plist in Resources */,
-				1B243CF91BA985720094ADAD /* Export-To-File-icon.png in Resources */,
 				1B243CFD1BA986340094ADAD /* file-import-icon.png in Resources */,
 				1BFEED071BEE1EE9002F095D /* Initializer.cctemplate in Resources */,
 				1B243C8D1BA962840094ADAD /* Document.xib in Resources */,
@@ -613,7 +609,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "Developer ID Application";
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -629,7 +624,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "Developer ID Application";
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",

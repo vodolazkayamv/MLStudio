@@ -12,14 +12,14 @@
 @interface TestCaseGenerator : NSObject
 
 @property (nonatomic, readwrite) NSString *subroutineToTest;	// реальная функция для теста
-@property (nonatomic, readonly) NSString *template;			// шаблон для начальной подстановки в редактор
+@property (nonatomic, readonly) NSString *templatef;			// шаблон для начальной подстановки в редактор
 @property (nonatomic, readonly) NSString *callTemplate;
 @property (nonatomic, readwrite) NSString *compilationResult;
 @property (nonatomic, readwrite) NSString *executionResult;
 
 
-- (NSString *) createTestApp:(Algorithm *)alg;		// создание и компиляция ткстовой программы на базе функции
-- (BOOL) compileFile;								// компиляция файла с тестомб Возвращает YES, если успешно
+- (NSString *) createTestApp:(Algorithm *)alg;		// создание и компиляция тестовой программы на базе функции
+- (BOOL) compileFile;								// компиляция файла с тестом Возвращает YES, если успешно
 - (BOOL) executeTestFile;							// запустить на выполнение файл с тестовым алгоритмом
 
 @end

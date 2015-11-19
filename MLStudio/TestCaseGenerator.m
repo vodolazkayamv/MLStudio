@@ -16,7 +16,7 @@ NSString * const OUTFILE			=	@"TestExecutable";
 @implementation TestCaseGenerator
 
 
-- (NSString *) template
+- (NSString *) templatef
 {
 	NSDateFormatter *df = [[NSDateFormatter alloc] init];
 	[df setDateStyle:NSDateFormatterMediumStyle];
@@ -84,6 +84,7 @@ NSString * const OUTFILE			=	@"TestExecutable";
 			if (replaceZone.location != NSNotFound) {
 				mainFile = [mainFile stringByReplacingCharactersInRange:replaceZone
 															 withString:alg.algorithm];
+                
 				// вторая часть - замена фрагмента вызова функции и ее начальных данных
 				
 				replaceZone = [mainFile rangeOfString:@"<<<PutCallHere>>>"];
@@ -91,8 +92,9 @@ NSString * const OUTFILE			=	@"TestExecutable";
 					mainFile = [mainFile stringByReplacingCharactersInRange:replaceZone withString:alg.callingFragment];
 				}
 				
-				// Теперь нам надо сохранить эту строчку в виде текстового файла в специальном каталоге
-				NSString *wdFile = [[self appDictionary] stringByAppendingPathComponent:TESTFILE];
+				// Теперь надо сохранить эту строчку в виде текстового файла в специальном каталоге
+				
+                NSString *wdFile = [[self appDictionary] stringByAppendingPathComponent:TESTFILE];
 				NSFileManager *fm = [NSFileManager defaultManager];
 				if ([fm fileExistsAtPath:wdFile]) {
 					[fm removeItemAtPath:wdFile error:&error];
